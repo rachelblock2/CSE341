@@ -33,7 +33,7 @@ const options = {
   family: 4
 };
 
-const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://rachellof:1N3IwgadwtLhc7@cluster0.z8i5l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://rachellof:G78bRrKWgPS7iZZ@cluster0.z8i5l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 app.use((req, res, next) => {
   User.findById('5bab316ce0a7c75f783cb8a8')
