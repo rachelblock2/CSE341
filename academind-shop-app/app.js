@@ -7,7 +7,9 @@ const mongoose = require('mongoose');
 
 const errorController = require('./controllers/error');
 const User = require('./models/user');
-// "start": "nodemon app.js",
+// // "start": "nodemon app.js",
+// "start": "node index.js",
+//     "start:dev": "nodemon --watch"
 
 const app = express();
 
