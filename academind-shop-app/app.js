@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 const corsOptions = {
-  origin: "https://floating-plains-91778.herokuapp.com/",
+  origin: "https://rachelcse341nodejs.herokuapp.com/",
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
@@ -52,7 +52,7 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 mongoose
   .connect(
     MONGODB_URL, options
@@ -69,7 +69,7 @@ mongoose
         user.save();
       }
     });
-    app.listen(port);
+    app.listen(PORT);
   })
   
   .catch(err => {
