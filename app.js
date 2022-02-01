@@ -52,6 +52,7 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
+// this port should work for heroku
 const PORT = process.env.PORT || 3000;
 mongoose
   .connect(
