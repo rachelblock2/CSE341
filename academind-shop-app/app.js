@@ -52,6 +52,7 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
+const port = process.env.PORT || 3000;
 mongoose
   .connect(
     MONGODB_URL, options
@@ -68,7 +69,7 @@ mongoose
         user.save();
       }
     });
-    app.listen(3000);
+    app.listen(port);
   })
   
   .catch(err => {
