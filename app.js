@@ -17,9 +17,8 @@ const User = require('./models/user');
 //     "start:dev": "nodemon --watch"
 
 const app = express();
-
 const MONGODB_URI =
-  'mongodb+srv://rachellof:G78bRrKWgPS7iZZ@cluster0.z8i5l.mongodb.net/shop?retryWrites=true&w=majority';
+  'mongodb+srv://rachellof:G78bRrKWgPS7iZZ@cluster0.z8i5l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 const store = new MongoDBStore({
   uri: MONGODB_URI,
