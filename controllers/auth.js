@@ -8,12 +8,11 @@ const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
       api_key:
-        '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'
+        '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'
     }
   })
 );
 
-// Error messages for login
 exports.getLogin = (req, res, next) => {
   let message = req.flash('error');
   if (message.length > 0) {
