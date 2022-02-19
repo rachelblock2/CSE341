@@ -6,7 +6,7 @@
 <body>
    <%- include('../includes/navigation.ejs') %>
 
-    <main>
+    <main class="main-form">
         <% if (errorMessage) { %>
             <div class="user-message user-message--error"><%= errorMessage %></div>
         <% } %>
@@ -54,5 +54,10 @@
             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
             <button class="btn" type="submit"><% if (editing) { %>Update Product<% } else { %>Add Product<% } %></button>
         </form>
+        <div class="form-side-bar">
+            <div class="form-side-bar-text">
+                <h1 class="form-side-bar-header">What candy will you be adding today?</h1>
+            </div>
+        </div>
     </main>
 <%- include('../includes/end.ejs') %>

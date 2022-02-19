@@ -6,6 +6,13 @@
     <%- include('../includes/navigation.ejs') %>
 
     <main>
+        <div class="hero_container">
+            <div class="hero_text">
+                <h1 class="hero_title">Heaps of Candy</h1>
+                <p class="hero_description">For all your candy needs</p>
+            </div>
+            <img class="hero_image" src="/images/candies-g43afc3a20_1921.jpg" alt="hero_candy">
+        </div>
         <% if (prods.length > 0) { %>
             <div class="grid">
                 <% for (let product of prods) { %>

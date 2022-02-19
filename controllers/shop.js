@@ -72,14 +72,15 @@ exports.getCart = (req, res, next) => {
 
 exports.postCart = (req, res, next) => {
   const prodId = req.body.productId;
+  const quantity = req.body.productAmt;
+  // quantity = parseInt(quantity);
   Product.findById(prodId)
-    .then(product => {
-      return req.user.addToCart(product);
-    })
-    .then(result => {
-      console.log(result);
-      res.redirect('/cart');
-    })
+  .then(product => {
+    return req.user.addToCart(product, quantity);
+  })
+  .then(result => {
+    res.redirect('/cart');
+  })
     .catch(err => {
       const error = new Error(err);
       error.httpStatusCode = 500;

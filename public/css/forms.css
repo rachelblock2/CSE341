@@ -1,3 +1,8 @@
+.main-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .form-control {
   margin: 1rem 0;
 }
@@ -8,13 +13,14 @@
   display: block;
   width: 100%;
   margin-bottom: 0.25rem;
+  color: #fff;
 }
 
 .form-control input,
 .form-control textarea {
   border: 1px solid #a1a1a1;
   font: inherit;
-  border-radius: 2px;
+  border-radius: 0.5rem;
 }
 
 .form-control input:focus,
@@ -25,4 +31,29 @@
 .form-control input.invalid,
 .form-control textarea.invalid {
   border-color: red;
+}
+
+.form-side-bar {
+  position: relative;
+  width: 50%;
+  background: url("/images/vinicius-amnx-amano-dbOV1qSiL-c-unsplash.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.7rem;
+}
+
+.form-side-bar-text {
+  position: absolute;
+  color: #fff;
+  background-color: #fd5474;
+  padding: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7rem;
+}
+
+.form-side-bar-header {
+  font-size: 2rem;
+  margin: 1rem 0.5rem;
 }
