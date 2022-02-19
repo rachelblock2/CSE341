@@ -1,0 +1,43 @@
+After completing the assignment, be sure to push to Github and Heroku.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://rachelcse341nodejs.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/rachelblock2/CSE341
+
+3. Briefly list and describe the elements of the application that are functioning.
+- The products/shop work with CRUD methods.
+- The cart/orders work as expected.
+- The login/signup validation and the form validation validate correctly.
+- The admin can add and delete products on their "account" as needed.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+- The reset password field does not send an email to reset a password.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+- I would say the work of receiving responses back based on work done on the server.
+Being able to send a request to the server to a specific function, and deal with the data that
+is stored via MongoDB is so powerful to me. Being able to use and change data as needed in a 
+clear, validated way is one of the most important parts of web development, so I even though
+it was a challenge, it was very satisfying to receive data back correctly.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+- I think if we went over the changes that were made in the assignment briefly in the middle of
+the week, that would be helpful. Especially if a few questions were taken for explanation or
+additional demonstration of the code. 
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements
+ X  5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+- While I did struggle and needed a little help from the TA, I was able to add
+an extra feature to the shop: choosing the quantity of the product BEFORE storing
+it in the cart. This makes the website more user friendly as it is much quicker
+to add multiple instances of a product. I also added a lot of CSS styling in order
+to give the website a new theme and make it my own.
