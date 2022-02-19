@@ -117,8 +117,9 @@ form {
 .mobile-nav__item a,
 .mobile-nav__item button {
   font: inherit;
+  font-weight: 700;
   text-decoration: none;
-  color: black;
+  color: #fd5474;
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   background: transparent;
@@ -131,18 +132,20 @@ form {
 .mobile-nav__item a.active,
 .mobile-nav__item button:hover,
 .mobile-nav__item button:active {
-  background: #00695c;
+  background: #fd5474;
   color: white;
-  border-radius: 3px;
+  border-radius: 2rem;
+  transition-duration: 0.5s;
 }
 
 #side-menu-toggle {
-  border: 1px solid white;
   font: inherit;
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 0.7rem;
   display: block;
-  background: transparent;
-  color: white;
+  border: none;
+  font-weight: 700;
+  color: #fd5474;
   cursor: pointer;
 }
 
@@ -152,8 +155,10 @@ form {
 
 #side-menu-toggle:active,
 #side-menu-toggle:hover {
-  color: #ffeb3b;
-  border-color: #ffeb3b;
+  background-color: #fd5474;
+  color: #fff;
+  border-radius: 2rem;
+  transition-duration: 0.5s;
 }
 
 .backdrop {
@@ -185,12 +190,13 @@ form {
 }
 
 .hero_title {
-  font-size: 3rem;
-  margin: 1rem 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0.2rem;
 }
 
 .hero_description {
-  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  margin: 0 0.2rem;
 }
 
 .hero_image {
@@ -258,13 +264,13 @@ form {
 }
 
 .btn.danger {
-  color: red;
-  border-color: red;
+  color: #fd5474;
+  border-color: #fd5474;
 }
 
 .btn.danger:hover,
 .btn.danger:active {
-  background: red;
+  background: #fd5474;
   color: white;
 }
 
@@ -272,7 +278,9 @@ form {
   width: 70%;
 }
 
-.input_btn:hover, .input_btn:active, .input_btn:focus {
+.input_btn:hover,
+.input_btn:active,
+.input_btn:focus {
   background-color: #fff;
   border: 1px solid #377481;
   color: #377481;
@@ -298,16 +306,35 @@ form {
   color: red;
 }
 
-@media (min-width: 768px) {
-  .main-header__nav {
-    display: flex;
-  }
-
-  #side-menu-toggle {
-    display: none;
+@media (min-width: 615px) {
+  .hero_title {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem;
   }
 
   .user-message {
     width: 30rem;
+  }
+}
+
+@media (min-width: 815px) {
+  .main-header__nav {
+    display: flex;
+  }
+  
+  #side-menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 985px) {
+  .hero_title {
+    font-size: 3rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .hero_description {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
   }
 }

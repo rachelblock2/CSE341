@@ -1,6 +1,26 @@
 .login-form {
   width: 20rem;
+  padding: 1.5rem;
   max-width: 90%;
   margin: auto;
   display: block;
+  background-color: #5ba9b8;
+  border-radius: 0.7rem;
+}
+
+.form-control label {
+  color: #fff;
+}
+
+.form-control input {
+  color: #377481;
+  padding: 0.2rem;
+}
+
+.centered {
+  padding: 1rem;
+}
+
+.reset-password {
+  color: #377481;
 }
